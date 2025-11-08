@@ -8,4 +8,8 @@
   --color-warmblack: #1C1814;
   --color-charcoal: #221E1A;
   --color-browncoal: #2D2420;
+
+  --font-family-sans: var(--font-noto-en), var(--font-noto-jp), var(--font-noto-kr), sans-serif;
+  --font-family-noto-jp: var(--font-noto-jp), sans-serif;
+  --font-family-noto-kr: var(--font-noto-kr), sans-serif;
 }
