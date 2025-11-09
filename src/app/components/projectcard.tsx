@@ -1,7 +1,16 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-export default function ProjectCard({id, title, description, project_link, image_source, tech}) {
+interface ProjectCardProps {
+  id: string,
+  title: string,
+  description: string,
+  project_link: string,
+  image_source: string,
+  tech: string[]
+}
+
+export default function ProjectCard({id, title, description, project_link, image_source, tech}: ProjectCardProps) {
   return (
     <Link
       href={project_link}
