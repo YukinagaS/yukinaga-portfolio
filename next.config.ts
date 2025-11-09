@@ -5,8 +5,6 @@ const nextConfig: NextConfig = {
   reactCompiler: true,
   output: 'export',
   distDir: 'out',
-  basePath: '/yukinaga-portfolio',
-  assetPrefix: '/yukinaga-portfolio',
   images: {
     unoptimized: true,
   }
