@@ -19,7 +19,7 @@ export default function RootLayout({
       lang="en"
       className={zenKaku.className}
     >
-      <body className="bg-darkcoal text-yukiwhite">
+      <body className="bg-darkcoal text-yukibody">
         {children}
       </body>
     </html>

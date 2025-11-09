@@ -1,0 +1,56 @@
+[
+  {
+    "id": "P0001",
+    "title": "CloudSync Analytics",
+    "description": "Enterprise-grade data synchronization platform that seamlessly connects multiple cloud services. Our AI-powered analytics engine provides real-time insights across your entire infrastructure.",
+    "project_link": "#",
+    "image_source": "/media-offline.png",
+    "tech": [
+      "NextJS",
+      "React",
+      "Typescript",
+      "Tailwind"
+    ]
+  },
+  {
+    "id": "P0002",
+    "title": "MealPal Connect",
+    "description": "Revolutionary meal planning app that connects home cooks with personalized recipes. Smart grocery integration automatically updates your shopping list based on your dietary preferences.",
+    "project_link": "#",
+    "image_source": "/media-offline.png",
+    "tech": [
+      "Ruby on Rails",
+      "Javascript",
+      "HTML",
+      "CSS"
+    ]
+  },
+  {
+    "id": "P0003",
+    "title": "FinFlow",
+    "description": "Modern financial dashboard for freelancers and small businesses. Track expenses, manage invoices, and visualize your cash flow all in one place.",
+    "project_link": "#",
+    "image_source": "/media-offline.png",
+    "tech": [
+      "React",
+      "Typescript",
+      "NextJS",
+      "Tailwind",
+      "HTML"
+    ]
+  },
+  {
+    "id": "P0004",
+    "title": "EduSpace",
+    "description": "Interactive learning platform that brings educators and students together in virtual classrooms. Features live collaboration tools, progress tracking, and gamified learning experiences.",
+    "project_link": "#",
+    "image_source": "/media-offline.png",
+    "tech": [
+      "Ruby on Rails",
+      "React",
+      "Javascript",
+      "CSS",
+      "Tailwind"
+    ]
+  }
+]
