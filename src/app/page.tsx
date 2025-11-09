@@ -12,7 +12,6 @@ export default function Home() {
         <h2 className="text-l text-yukiwhite">日々精進中</h2>
         <SocialLinks />
       </header>
-
       <main className="basis-3/5">
         <AboutPage />
         <ProjectsPage />
