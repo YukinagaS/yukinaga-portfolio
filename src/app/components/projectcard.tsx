@@ -29,7 +29,7 @@ export default function ProjectCard({id, title, description, project_link, image
           />
         </div>
 
-        <div className="px-4 py-2">
+        <div className="md:px-4 py-2">
             <h3 className="text-xl font-bold text-yukiwhite">{title}</h3>
           <p className="font-light">{description}</p>
         </div>
