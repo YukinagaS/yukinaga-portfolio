@@ -1,8 +1,13 @@
-import SocialLinks from "@/app/components/sociallinks"
-import AboutPage from "@/app/about/page"
-import ProjectsPage from "@/app/projects/page"
+import SocialLinks from "@/app/components/sociallinks";
+import BlogSection from "@/app/components/blogsection";
+import AboutPage from "@/app/about/page";
+import ProjectsPage from "@/app/projects/page";
+import { getSortedPostsData } from '@/app/lib/posts';
 
-export default function Home() {
+
+export default async function Home() {
+  const allPostsData = getSortedPostsData();
+
   return (
     <div className="h-full w-full p-5 flex flex-col gap-8 md:flex-row md:p-12">
       <header className="basis-2/5">
@@ -13,6 +18,7 @@ export default function Home() {
       </header>
       <main className="basis-3/5">
         <AboutPage />
+        <BlogSection allPostsData={allPostsData} />
         <ProjectsPage />
       </main>
     </div>
