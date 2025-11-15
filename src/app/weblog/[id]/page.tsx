@@ -1,27 +1,24 @@
-import { PostProps } from '@/app/lib/posts';
-import { getSortedPostsData } from '@/app/lib/posts';
-
-interface PostPageProps {
-  params: PostProps;
-}
+import { getAllPostIds, getPostData } from '@/app/lib/posts'
 
 export async function generateStaticParams() {
-  const sortedPosts = await getSortedPostsData();
-  return sortedPosts.map((post) => ({
-    id: post.id,
-    title: post.title,
-  }));
+  const ids = getAllPostIds()
+
+  return (
+    ids.map((item) => ({
+      id: item.params.id
+    }))
+  )
 }
 
-export default async function PostPage({ params }: PostPageProps) {
-  const resolvedParams = await params;
-  console.log(resolvedParams.title);
+export default async function PostPage({ params,}: { params: Promise<{ id: string }>}) {
+  const { id } = await params;
+  const data = await getPostData(id);
 
   return (
     <article>
-      {/* <h2>{params.title}</h2>
-      <h3>{params.date}</h3>
-      <p>{params.content}</p> */}
+      <h1>{data.title}</h1>
+      <p>{data.date}</p>
+      <div dangerouslySetInnerHTML={{ __html: data.content }} />
     </article>
   )
 }

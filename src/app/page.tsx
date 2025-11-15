@@ -4,7 +4,6 @@ import AboutPage from "@/app/about/page";
 import ProjectsPage from "@/app/projects/page";
 import { getSortedPostsData } from '@/app/lib/posts';
 
-
 export default async function Home() {
   const allPostsData = getSortedPostsData();
 
