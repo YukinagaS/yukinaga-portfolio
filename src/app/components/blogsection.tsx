@@ -14,9 +14,9 @@ export default function BlogSection({ allPostsData }: BlogSectionProps) {
           <li key={id}>
             <Link
             href={`weblog/${id}`}
-            className="hover:underline"
+            className="underline hover:no-underline"
             >
-            {title}: {id}: {date}
+            {date} - {title}
             </Link>
           </li>
         ))}

@@ -19,8 +19,13 @@ export default function RootLayout({
       lang="en"
       className={zenKaku.className}
     >
-      <body className="h-screen w-screen bg-darkcoal text-yukibody">
-        {children}
+      <body className="min-h-screen w-screen bg-darkcoal text-yukibody">
+        <div className="min-h-screen max-w-5xl mx-auto flex flex-col">
+          {children}
+          <footer>
+            <p className="h-8 font-light text-xs text-center">© Yukinaga Heavy Industries, Inc.</p>
+          </footer>
+        </div>
       </body>
     </html>
   );
